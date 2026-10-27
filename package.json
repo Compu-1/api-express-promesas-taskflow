@@ -1,0 +1,25 @@
+{
+  "name": "api-express-promesas-taskflow",
+  "version": "1.0.0",
+  "description": "API REST con Express diseñada para comprender y aplicar el concepto de Promesas en JavaScript",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "express",
+    "promises",
+    "async-await",
+    "compu1",
+    "icesi",
+    "taskflow"
+  ],
+  "author": "Universidad Icesi - Departamento de Computación y Sistemas Inteligentes",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
