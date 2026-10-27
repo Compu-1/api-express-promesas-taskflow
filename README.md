@@ -6,6 +6,21 @@ Su único propósito es suministrar una lista predefinida de tareas en formato J
 
 ---
 
+## 📄 Guía del Taller Formativo
+
+La guía práctica oficial del taller formativo para la construcción del frontend paso a paso se encuentra en este repositorio:
+
+* 📘 **Guía Oficial en PDF:** [`taller/Taller_Formativo_Frontend_Consumo_API_Express_Promesas.pdf`](./taller/Taller_Formativo_Frontend_Consumo_API_Express_Promesas.pdf)
+* 📝 **Fuente LaTeX:** [`taller/Taller_Formativo_Frontend_Consumo_API_Express_Promesas.tex`](./taller/Taller_Formativo_Frontend_Consumo_API_Express_Promesas.tex)
+
+### 🎯 Objetivos de la Práctica
+1. Construir una interfaz completa en **JavaScript Puro (Vanilla JS)** manipulando el DOM a partir de un HTML minimalista (`<div id="root"></div>`).
+2. Implementar una **arquitectura modular de componentes funcionales** (`Header`, `TaskForm`, `TaskItem`, `TaskList`, `LoadingSpinner`, `ErrorAlert`, `App`).
+3. Dominar el flujo unidireccional de datos mediante **props** descendentes y **callbacks** de eventos ascendentes.
+4. Consumir las operaciones `GET`, `POST` y `DELETE` de esta API usando **Promesas** con `fetch` y `async / await` en una capa de servicio independiente (`taskService.js`).
+
+---
+
 ## 🚀 Puesta en Marcha en 2 Pasos
 
 ```bash
