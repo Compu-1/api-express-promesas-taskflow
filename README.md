@@ -20,8 +20,9 @@ El servidor quedará escuchando en: **`http://localhost:3001`**.
 
 ---
 
-## 📡 Endpoint Provisto
+## 📡 Endpoints Provistos
 
+### 1. Obtener todas las tareas (`GET /api/tasks`)
 * **URL:** `http://localhost:3001/api/tasks`
 * **Método:** `GET`
 * **Respuesta de Ejemplo:**
@@ -29,11 +30,24 @@ El servidor quedará escuchando en: **`http://localhost:3001`**.
   [
     { "id": 1, "title": "Comprender la estructura básica de HTML y CSS", "completed": true },
     { "id": 2, "title": "Aprender a seleccionar y modificar elementos del DOM", "completed": true },
-    { "id": 3, "title": "Entender qué es una Promesa y sus tres estados en JS", "completed": false },
-    { "id": 4, "title": "Consumir una API externa usando fetch y async/await", "completed": false },
-    { "id": 5, "title": "Renderizar dinámicamente los datos en la interfaz web", "completed": false }
+    { "id": 3, "title": "Entender qué es una Promesa y sus tres estados en JS", completed: false }
   ]
   ```
+
+### 2. Crear una nueva tarea (`POST /api/tasks`)
+* **URL:** `http://localhost:3001/api/tasks`
+* **Método:** `POST`
+* **Headers:** `Content-Type: application/json`
+* **Cuerpo (Body):**
+  ```json
+  { "title": "Estudiar asincronía en JavaScript" }
+  ```
+* **Respuesta:** Objeto creado con su nuevo `id` (`201 Created`).
+
+### 3. Eliminar una tarea (`DELETE /api/tasks/:id`)
+* **URL:** `http://localhost:3001/api/tasks/1`
+* **Método:** `DELETE`
+* **Respuesta:** Mensaje de confirmación (`200 OK`).
 
 ---
 
